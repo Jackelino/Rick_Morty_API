@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div>
+    <div class="pb-3 pt-3">
       <div class="text-center">
         <span class="text-white"
           ><i class="fas fa-brain" style="color: #fd5c6f"></i> Made by

@@ -9,10 +9,28 @@
         >
           <CardCharacter :character="character" />
         </div>
-        <div v-if="characters == ''">
-          <div class="text-center">
-            <h2 class="text-white">Sorry, we couldn't find any results for your search</h2>
-            <span class="text-white">try again</span>
+        <div class="row" v-if="characters == ''">
+          <div class="col-lg-6">
+            <div class="p-5">
+              <div class="text-center">
+                <h2 class="text-white">
+                  Sorry, we couldn't find any results for your search.
+                </h2>
+                <span class="text-gren">try again</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="p-5">
+              <div class="d-flex justify-content-center">
+                <img
+                  class="img-fluid"
+                  src="../assets/image/error.png"
+                  alt=""
+                  width="150"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -45,5 +63,8 @@ export default {
 .components-body {
   padding-bottom: 60px;
   padding-top: 30px;
+}
+.text-gren {
+  color: #7efa63;
 }
 </style>
